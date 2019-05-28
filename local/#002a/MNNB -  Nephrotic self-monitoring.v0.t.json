@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "9dc8a2848436bf22f5c9e3f831295940",
-      "PARENT:MD5-CAM-1.0.1" : "21B50C8EFDD51D3AF78C78B2B7D99F88"
+      "MD5-CAM-1.0.1" : "e5f932b4aea16a139acf1f108e32677f",
+      "PARENT:MD5-CAM-1.0.1" : "37cb2739d18bce46449d27390a1525d8"
     },
     "details" : {
       "en" : {
@@ -74,28 +74,7 @@
       "children" : [ {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "EVENT_CONTEXT",
-        "attributes" : [ {
-          "@type" : "C_ATTRIBUTE",
-          "rmAttributeName" : "other_context",
-          "children" : [ {
-            "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "ITEM_TREE",
-            "nodeId" : "at0001",
-            "attributes" : [ {
-              "@type" : "C_ATTRIBUTE",
-              "rmAttributeName" : "items",
-              "existence" : "0..1",
-              "cardinality" : {
-                "@type" : "CARDINALITY",
-                "interval" : "0..*",
-                "ordered" : false,
-                "unique" : false
-              },
-              "children" : [ ]
-            } ],
-            "attributeTuples" : [ ]
-          } ]
-        } ],
+        "attributes" : [ ],
         "attributeTuples" : [ ]
       } ]
     }, {
