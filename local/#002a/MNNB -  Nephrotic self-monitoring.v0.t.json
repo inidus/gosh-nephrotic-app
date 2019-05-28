@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "7c7bc83b223bf69717e55c15d705fb2b",
+      "MD5-CAM-1.0.1" : "90249ff7793a1a5a76cb986e908ea348",
       "PARENT:MD5-CAM-1.0.1" : "7266FD81BB789DCF8A90C79D855DBFB1"
     },
     "details" : {
@@ -2013,6 +2013,34 @@
               "unique" : false
             },
             "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0020.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "defaultValue" : {
+                    "defining_code" : {
+                      "terminology_id" : {
+                        "value" : "SNOMED-CT",
+                        "@type" : "TERMINOLOGY_ID"
+                      },
+                      "code_string" : "52388000",
+                      "@type" : "CODE_PHRASE"
+                    },
+                    "value" : "Prednisolone product",
+                    "@type" : "DV_CODED_TEXT"
+                  },
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
