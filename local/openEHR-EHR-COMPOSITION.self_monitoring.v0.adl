@@ -31,7 +31,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"37cb2739d18bce46449d27390a1525d8">
+		["MD5-CAM-1.0.1"] = <"6280f8f9ad3f6af4c41ee9fa222e1cfd">
 		["build_uid"] = <"da287907-e979-4c1e-b43c-7b066c2fa14f">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -67,7 +67,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Self monitoring">
-					description = <"A composition to record a person monitoring particular parameters">
+					description = <"A composition to record a person self-monitoring particular parameters.">
 				>
 				["at0001"] = <
 					text = <"Tree">
