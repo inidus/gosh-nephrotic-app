@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "d8ecf2e2052a71a9dc0a885456c2cf2d",
+      "MD5-CAM-1.0.1" : "4a120e44ff01f8f44983ec1562f7c4f5",
       "PARENT:MD5-CAM-1.0.1" : "6ee5507c47efbfed681c45b1bc015473"
     },
     "details" : {
@@ -99,7 +99,7 @@
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "ACTION",
-        "occurrences" : "0..*",
+        "occurrences" : "0..0",
         "nodeId" : "at0.4",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -108,7 +108,7 @@
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "INSTRUCTION",
-        "occurrences" : "0..*",
+        "occurrences" : "0..0",
         "nodeId" : "at0.6",
         "attributes" : [ ],
         "attributeTuples" : [ ],
