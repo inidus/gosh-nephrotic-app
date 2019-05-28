@@ -31,13 +31,13 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6280f8f9ad3f6af4c41ee9fa222e1cfd">
+		["MD5-CAM-1.0.1"] = <"84374ac56901f09f6e04f69385c67744">
 		["build_uid"] = <"da287907-e979-4c1e-b43c-7b066c2fa14f">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	COMPOSITION[at0000] matches {    -- Self monitoring
+	COMPOSITION[at0000] matches {    -- Nephrotic syndrome self monitoring
 		category matches {
 			DV_CODED_TEXT matches {
 				defining_code matches {
@@ -66,7 +66,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Self monitoring">
+					text = <"Nephrotic syndrome self monitoring">
 					description = <"A composition to record a person self-monitoring particular parameters.">
 				>
 				["at0001"] = <
