@@ -31,7 +31,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"21B50C8EFDD51D3AF78C78B2B7D99F88">
+		["MD5-CAM-1.0.1"] = <"37cb2739d18bce46449d27390a1525d8">
 		["build_uid"] = <"da287907-e979-4c1e-b43c-7b066c2fa14f">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -48,7 +48,14 @@ definition
 		context matches {
 			EVENT_CONTEXT matches {
 				other_context matches {
-					ITEM_TREE[at0001] matches {*}    -- Tree
+					ITEM_TREE[at0001] matches {    -- Tree
+						items cardinality matches {0..*; unordered} matches {
+							allow_archetype CLUSTER[at0002] occurrences matches {0..*} matches {    -- Extension
+								include
+									archetype_id/value matches {/.*/}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -65,6 +72,11 @@ ontology
 				["at0001"] = <
 					text = <"Tree">
 					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"For example: Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.">
 				>
 			>
 		>
