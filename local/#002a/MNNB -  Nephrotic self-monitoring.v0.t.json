@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "5b6b2d7fe75c3314501580d5280da7c0",
+      "MD5-CAM-1.0.1" : "3733ee6709626559e42336d45cfaa068",
       "PARENT:MD5-CAM-1.0.1" : "7266FD81BB789DCF8A90C79D855DBFB1"
     },
     "details" : {
@@ -477,12 +477,33 @@
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
                   "defaultValue" : {
-                    "value" : "SNOMED-CT::123456::Nephrotic syndrome",
-                    "@type" : "DV_TEXT"
+                    "defining_code" : {
+                      "terminology_id" : {
+                        "value" : "SNOMED-CT",
+                        "@type" : "TERMINOLOGY_ID"
+                      },
+                      "code_string" : "52254009",
+                      "@type" : "CODE_PHRASE"
+                    },
+                    "value" : "Nephrotic syndrome",
+                    "@type" : "DV_CODED_TEXT"
                   },
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "SNOMED-C"
+                      },
+                      "constraint" : [ "ac0.1" ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
