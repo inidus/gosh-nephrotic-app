@@ -1,0 +1,77 @@
+archetype (adl_version=1.4; uid=6010256d-ab16-4ff7-baa4-b5fffd270686)
+	openEHR-EHR-CLUSTER.nephrotic_syndrome_status.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHr Clinical Informatics Ltd.">
+		["email"] = <"ian@freshehr.com">
+		["date"] = <"2019-05-29">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"bd95fcf52965471fcb9996248e0015df">
+		["build_uid"] = <"6ca6840c-e0fb-3bf8-bba3-e82d368b461e">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Nephrotic_syndrome_status
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Status
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- Maintenance
+							at0003,    -- Relapse
+							at0004]    -- Remission
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Nephrotic_syndrome_status">
+					description = <"Nephrotic_syndrome_status">
+				>
+				["at0001"] = <
+					text = <"Status">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"Maintenance">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Relapse">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"Remission">
+					description = <"*">
+				>
+			>
+		>
+	>
