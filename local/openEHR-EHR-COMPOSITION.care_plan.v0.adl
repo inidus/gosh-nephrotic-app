@@ -42,7 +42,7 @@ The SECTION.care_plan archetype is an example of a framework for clinical conten
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2711503f28bad96d1b3844f484bd157d">
+		["MD5-CAM-1.0.1"] = <"a1d85154adfb0acbbee3cd656ec960ef">
 		["build_uid"] = <"500b36b2-ba53-4dfa-8cf5-5113c9a1d577">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -68,6 +68,19 @@ definition
 						}
 					}
 				}
+				start_time matches {
+					DV_DATE_TIME[at0004] matches {*}    -- DV_DATE_TIME
+				}
+				end_time matches {
+					DV_DATE_TIME[at0005] matches {*}    -- DV_DATE_TIME
+				}
+			}
+		}
+		composer matches {
+			PARTY_IDENTIFIED[at0006] matches {    -- PARTY_IDENTIFIED
+				identifiers cardinality matches {0..*; unordered} matches {
+					DV_IDENTIFIER[at0007] occurrences matches {0..1} matches {*}    -- DV_IDENTIFIER
+				}
 			}
 		}
 	}
@@ -92,6 +105,22 @@ ontology
 					text = <"Extension">
 					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
 					comment = <"For example: Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.">
+				>
+				["at0004"] = <
+					text = <"DV_DATE_TIME">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"DV_DATE_TIME">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"PARTY_IDENTIFIED">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"DV_IDENTIFIER">
+					description = <"*">
 				>
 			>
 		>
