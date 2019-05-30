@@ -9,10 +9,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2019-05-29">
 		["name"] = <"Ian McNicoll">
 		["organisation"] = <"freshEHr Clinical Informatics Ltd.">
 		["email"] = <"ian@freshehr.com">
-		["date"] = <"2019-05-29">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"bd95fcf52965471fcb9996248e0015df">
+		["MD5-CAM-1.0.1"] = <"052efc1a9cd35644efd3df12de6d00ac">
 		["build_uid"] = <"6ca6840c-e0fb-3bf8-bba3-e82d368b461e">
 	>
 
@@ -62,15 +62,15 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Maintenance">
-					description = <"*">
+					description = <"The disease is in a maintenance phase.">
 				>
 				["at0003"] = <
 					text = <"Relapse">
-					description = <"*">
+					description = <"The disease is in a replase phase.">
 				>
 				["at0004"] = <
 					text = <"Remission">
-					description = <"*">
+					description = <"The disease is in a remission phase.">
 				>
 			>
 		>
