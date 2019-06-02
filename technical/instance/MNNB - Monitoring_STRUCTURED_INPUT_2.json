@@ -1,0 +1,121 @@
+{
+  "nephrotic_syndrome_self_monitoring": {
+
+    "language": [{
+      "|code": "en",
+      "|terminology": "ISO_639-1"
+    }],
+    "territory": [{
+      "|code": "GB",
+      "|terminology": "ISO_3166-1"
+    }],
+    "context": [{
+      "_health_care_facility": [{
+        "|name": "Home"
+      }],
+      "start_time": [
+        "2019-06-03T16:17:17.122Z"
+      ],
+      "setting": [{
+        "|code": "238",
+        "|value": "other care",
+        "|terminology": "openehr"
+      }]
+    }],
+    "urinalysis": [{
+      "protein": [{
+        "|code": "at0099",
+        "|value": "2+",
+        "|ordinal": 4
+      }],
+      "time": [
+        "2019-06-03T16:17:17.122Z"
+      ],
+      "language": [{
+        "|code": "en",
+        "|terminology": "ISO_639-1"
+      }],
+      "encoding": [{
+        "|code": "UTF-8",
+        "|terminology": "IANA_character-sets"
+      }]
+    }],
+    "nephrotic_syndrome_status": [{
+      "problem_diagnosis_name": [{
+        "|code": "52254009",
+        "|value": "Nephrotic syndrome",
+        "|terminology": "SNOMED-CT"
+      }],
+      "nephrotic_syndrome_status": [{
+        "status": [{
+          "|code": "at0004",
+          "|value": "at0004",
+          "|terminology": "local"
+        }]
+      }],
+      "language": [{
+        "|code": "en",
+        "|terminology": "ISO_639-1"
+      }],
+      "encoding": [{
+        "|code": "UTF-8",
+        "|terminology": "IANA_character-sets"
+      }]
+    }],
+    "daily_dose_administered": [{
+      "ism_transition": [{
+        "current_state": [{
+          "|code": "245",
+          "|value": "active",
+          "|terminology": "openehr"
+        }],
+        "careflow_step": [{
+          "|code": "at0006",
+          "|value": "Dose administered",
+          "|terminology": "local"
+        }]
+      }],
+      "medication_item": [{
+        "|code": "Prednisolone",
+        "|value": "52388000",
+        "|terminology": "SNOMED-CT"
+      }],
+      "reason": [
+        "Relapse regime"
+      ],
+      "comment": [
+        "Getting worse"
+      ],
+      "dosage": [{
+        "dose_amount": [{
+          "|magnitude": 20,
+          "|unit": "1"
+        }],
+        "dose_unit": [{
+          "|code": "mg",
+          "|value": "Milligram",
+          "|terminology": "UCUM"
+        }]
+      }],
+      "time": [
+        "2019-06-03T16:17:17.122Z"
+      ],
+      "language": [{
+        "|code": "en",
+        "|terminology": "ISO_639-1"
+      }],
+      "encoding": [{
+        "|code": "UTF-8",
+        "|terminology": "IANA_character-sets"
+      }]
+    }],
+    "category": [{
+      "|code": "433",
+      "|value": "event",
+      "|terminology": "openehr"
+    }],
+    "composer": [{
+      "|name": "Silvia Blake"
+    }]
+  }
+}
