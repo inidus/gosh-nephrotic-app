@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "80d4e52a29d5b005650a1d8ff0e0cae0",
+      "MD5-CAM-1.0.1" : "38ae196a1c0c699d7cb8f0c934c218ac",
       "PARENT:MD5-CAM-1.0.1" : "41b369dffeeb085ea8b901900f95a202"
     },
     "details" : {
@@ -1138,7 +1138,14 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Daily timing",
+            "description" : "Structured information about the intended timing of a therapeutic or diagnostic activity within any 24 hour period."
+          }
+        },
         "sl" : { },
         "nb" : { }
       },
