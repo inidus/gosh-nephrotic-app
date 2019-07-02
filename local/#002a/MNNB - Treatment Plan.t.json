@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "38ae196a1c0c699d7cb8f0c934c218ac",
+      "MD5-CAM-1.0.1" : "2acc6ef09b96e9b4b79569e396f6c315",
       "PARENT:MD5-CAM-1.0.1" : "41b369dffeeb085ea8b901900f95a202"
     },
     "details" : {
@@ -318,8 +318,16 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_TEXT",
                       "defaultValue" : {
+                        "defining_code" : {
+                          "terminology_id" : {
+                            "value" : "SNOMED-CT",
+                            "@type" : "TERMINOLOGY_ID"
+                          },
+                          "code_string" : "123456",
+                          "@type" : "CODE_PHRASE"
+                        },
                         "value" : "Prednisolone",
-                        "@type" : "DV_TEXT"
+                        "@type" : "DV_CODED_TEXT"
                       },
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
@@ -550,7 +558,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Maintenance plan",
+            "text" : "Treatment plan",
             "description" : "An order for a medication, vaccine, nutritional product or other therapeutic item for an identified individual."
           }
         },
@@ -1895,6 +1903,31 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "defaultValue" : {
+                "defining_code" : {
+                  "code_string" : "at0067",
+                  "@type" : "CODE_PHRASE"
+                },
+                "@type" : "DV_CODED_TEXT"
+              },
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.13" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_DURATION",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -1974,9 +2007,30 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
-        "nb" : { },
-        "pt-br" : { }
+        "en" : {
+          "ac0.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.13",
+            "description" : "*"
+          }
+        },
+        "nb" : {
+          "ac0.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.13",
+            "description" : "*"
+          }
+        },
+        "pt-br" : {
+          "ac0.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.13",
+            "description" : "*"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -2030,6 +2084,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.10",
           "members" : [ "at0067", "at0068" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0067", "at0068" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ "at0067" ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ "at0067" ]
         }
       }
     },
