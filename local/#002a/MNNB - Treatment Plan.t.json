@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "2948d7bead1ed95f0b2d2c7b9ad1a7f0",
+      "MD5-CAM-1.0.1" : "f1641146a8eac09d12e571d2d032af98",
       "PARENT:MD5-CAM-1.0.1" : "41b369dffeeb085ea8b901900f95a202"
     },
     "details" : {
@@ -3822,7 +3822,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "081E3D0645B3445FD60DBD712D72D380"
+        "PARENT:MD5-CAM-1.0.1" : "52614d0a7e3e4d7a2e7cc8d77dd54ae7"
       },
       "details" : {
         "nb" : {
@@ -3895,7 +3895,6 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0002.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -3910,7 +3909,6 @@
                   "@type" : "C_DURATION",
                   "rmTypeName" : "DURATION",
                   "occurrences" : "1..1",
-                  "patternedConstraint" : "PD",
                   "constraint" : [ {
                     "lower" : "P0D",
                     "lowerUnbounded" : false,
@@ -4233,13 +4231,6 @@
             "code" : "at0000.1",
             "text" : "Repetition timing",
             "description" : "Structured information about the intended timing pattern for a therapeutic or diagnostic activity occurring over days, weeks, months or years."
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Interval",
-            "description" : "The interval between repetitions of the activity.",
-            "comment" : "For example: 'Every 3 weeks'. If necessary, this element can be used to explicity specify that an activity is to take place every single day, by setting it to \"1 day\"."
           },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
