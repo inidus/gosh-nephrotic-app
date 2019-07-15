@@ -1804,7 +1804,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "52EE4E6F405A92ADAAE5C33293DAA685"
+        "PARENT:MD5-CAM-1.0.1" : "e62f77ed4d0237ffe0a403a26b78b7fa"
       },
       "details" : {
         "nb" : {
@@ -1884,6 +1884,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_DURATION",
                   "rmTypeName" : "DURATION",
