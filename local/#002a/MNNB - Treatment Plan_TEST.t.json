@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "6a3d258041b4e4dbdefcbf3e02899c22",
+      "MD5-CAM-1.0.1" : "7979501b84fad91514035ea4cb5c8589",
       "PARENT:MD5-CAM-1.0.1" : "41b369dffeeb085ea8b901900f95a202"
     },
     "details" : {
@@ -80,24 +80,6 @@
       },
       "children" : [ {
         "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "ADMIN_ENTRY",
-        "occurrences" : "0..*",
-        "nodeId" : "at0.35",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-careteam_cc-001.v0",
-        "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "ACTION",
-        "occurrences" : "0..0",
-        "nodeId" : "at0.37",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-ACTION.ovl-informed_consent-001.v0",
-        "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "INSTRUCTION",
         "occurrences" : "0..*",
         "nodeId" : "at0.39",
@@ -134,123 +116,6 @@
   "templateId" : "MNNB - Treatment Plan_TEST",
   "otherMetaData" : { },
   "templateOverlays" : [ {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "62a48eb0-40a2-48df-ad06-ced2da29eed4",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0771580f852546d471eccc4e3443f6b7"
-      },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-ADMIN_ENTRY.careteam_cc.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-ADMIN_ENTRY.ovl-careteam_cc-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "ADMIN_ENTRY",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "910c5e81-1980-32f5-a794-1d6448cac705",
-    "rmName" : "openehr",
-    "rmRelease" : "1.0.3",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "7dac4714-7889-46ce-9811-d401900dcfa2",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "946987A1D182E9C9FEE624EF6065E29D"
-      },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-ACTION.informed_consent.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-ACTION.ovl-informed_consent-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "ACTION",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { },
-        "ru" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "faa091cc-551b-43cb-9068-60ff719a25e6",
-    "rmName" : "openehr",
-    "rmRelease" : "1.0.3",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "ru"
-      },
-      "author" : {
-        "name" : "Art Latyp; Латыпов Артур Шамилевич",
-        "organisation" : "RusBITech РусБИТех"
-      },
-      "accreditation" : "hmm",
-      "otherDetails" : { }
-    } ]
-  }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "93ddbe3e-e9af-453a-a5fc-d05e4428fe36",
     "description" : {
