@@ -89,7 +89,7 @@ Standards for medication and medical device records – technical annex [Interne
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"52EE4E6F405A92ADAAE5C33293DAA685">
+		["MD5-CAM-1.0.1"] = <"e62f77ed4d0237ffe0a403a26b78b7fa">
 		["build_uid"] = <"b8c6d192-bdba-4dea-ab47-cc16bfe3a216">
 		["revision"] = <"1.1.2">
 	>
@@ -117,9 +117,7 @@ definition
 							at0068]    -- Indefinite - not to be discontinued
 						}
 					}
-					DV_DURATION matches {
-						value matches {|>=PT0S|}
-					}
+					DV_DURATION matches {*}
 					DV_TEXT matches {*}
 				}
 			}
