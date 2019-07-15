@@ -76,7 +76,7 @@ In use cases where it can be safely assumed that an activity should be carried o
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"081E3D0645B3445FD60DBD712D72D380">
+		["MD5-CAM-1.0.1"] = <"52614d0a7e3e4d7a2e7cc8d77dd54ae7">
 		["build_uid"] = <"3629d3e2-22ec-4cbc-a8b5-6f1223f5a0eb">
 		["revision"] = <"1.0.0">
 	>
@@ -87,7 +87,7 @@ definition
 			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Repetition interval
 				value matches {
 					DV_DURATION matches {
-						value matches {PYMWD/|>P0D|}
+						value matches {|>P0D|}
 					}
 				}
 			}
