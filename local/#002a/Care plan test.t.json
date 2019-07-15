@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "f96ea18a4a40e8918876c8f12954d242",
+      "MD5-CAM-1.0.1" : "5543a8e82f4c32402e3d6f7c23c93fd4",
       "PARENT:MD5-CAM-1.0.1" : "41b369dffeeb085ea8b901900f95a202"
     },
     "details" : {
@@ -82,10 +82,10 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "EVALUATION",
         "occurrences" : "0..*",
-        "nodeId" : "at0.2",
+        "nodeId" : "at0.4",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-clinical_synopsis-001.v1",
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-test_duration-001.v0",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -110,7 +110,7 @@
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "eadcfcf3-7c8f-4166-9077-1a6ec26c6758",
+    "uid" : "c72b1b5a-af28-4854-a479-d6da6ed87f80",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -119,15 +119,15 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "32F9563D428258E02EFA916126110EBF"
+        "PARENT:MD5-CAM-1.0.1" : "01ab855f685342aeb60dbc99a2dee663"
       },
       "details" : { }
     },
-    "parentArchetypeId" : "openEHR-EHR-EVALUATION.clinical_synopsis.v1",
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.test_duration.v0",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-EVALUATION.ovl-clinical_synopsis-001.v1"
+      "value" : "openEHR-EHR-EVALUATION.ovl-test_duration-001.v0"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
@@ -140,22 +140,14 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
-        "fa" : { },
-        "ar-sy" : { },
-        "de" : { },
-        "es-ar" : { },
-        "pt-br" : { },
-        "zh-cn" : { },
-        "nb" : { },
-        "sv" : { }
+        "en" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
     "adlVersion" : "1.4",
-    "buildUid" : "4153b32a-34b0-4fcd-ab26-71b9ca3830c9",
+    "buildUid" : "92fb6426-c596-3d78-9680-4af462948da4",
     "rmName" : "openehr",
     "rmRelease" : "1.0.3",
     "generated" : true,
@@ -166,116 +158,7 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Nadim Anani",
-        "organisation" : "Health Informatics Centre, Karolinska Institutet, Sweden"
-      },
-      "accreditation" : "fluent in both English and German, Medical Informatics 'MSc' degree from Heidelberg, 2 years professional experience in health informatics, some translation experience, openEHR knowledge.",
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "sv"
-      },
-      "author" : {
-        "name" : "Kirsi Poikela",
-        "organisation" : "Tieto Sweden AB",
-        "email" : "ext.kirsi.poikela@tieto.com"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "es-ar"
-      },
-      "author" : {
-        "name" : "Dr. Leonardo Der Jachadurian",
-        "organisation" : "Bitios.com"
-      },
-      "accreditation" : "Medical Doctor (Internal Medicine Specialist)",
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Ingrid Heitmann",
-        "organisation" : "NTNU and OUS, Registered nurse",
-        "email" : "john.tore.valand@helse-bergen.no"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "pt-br"
-      },
-      "author" : {
-        "name" : "Emerson Urushibata",
-        "organisation" : "Universidade de São Paulo"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "ar-sy"
-      },
-      "author" : {
-        "name" : "Mona Saleh"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "fa"
-      },
-      "author" : {
-        "name" : "Shahla Foozonkhah",
-        "organisation" : "Ocean Informatics",
-        "email" : "shahla.foozonkhah@oceaninformatics.com"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "zh-cn"
-      },
-      "author" : {
-        "name" : "Lin Zhang",
-        "organisation" : "BIPH"
-      },
-      "accreditation" : "What goes here?",
-      "otherDetails" : { }
-    } ]
+    "translations" : [ ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
