@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "1b64eb16aa04d22f87f1a98ecaa3d8a7",
+      "MD5-CAM-1.0.1" : "d6c7ca27b3b9d57e78bf8e713ac99f30",
       "PARENT:MD5-CAM-1.0.1" : "41b369dffeeb085ea8b901900f95a202"
     },
     "details" : {
@@ -552,14 +552,7 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Treatment plan",
-            "description" : "An order for a medication, vaccine, nutritional product or other therapeutic item for an identified individual."
-          }
-        },
+        "en" : { },
         "nb" : { },
         "pt-br" : { },
         "es-ar" : { }
