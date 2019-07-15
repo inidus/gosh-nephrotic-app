@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "a3d941e508c077da84831b5c14896b6a",
+      "MD5-CAM-1.0.1" : "b69e6b6a073465c7e77bf71c20598cf1",
       "PARENT:MD5-CAM-1.0.1" : "41b369dffeeb085ea8b901900f95a202"
     },
     "details" : {
@@ -4192,6 +4192,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : "*"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Repetition timing",
+            "description" : "Structured information about the intended timing pattern for a therapeutic or diagnostic activity occurring over days, weeks, months or years."
           },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
