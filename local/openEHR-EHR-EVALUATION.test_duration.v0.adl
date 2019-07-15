@@ -1,0 +1,66 @@
+archetype (adl_version=1.4; uid=cd385f02-ef1e-472c-adcf-38befc5cb860)
+	openEHR-EHR-EVALUATION.test_duration.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHr Clinical Informatics Ltd.">
+		["email"] = <"ian@freshehr.com">
+		["date"] = <"2019-07-15">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"01ab855f685342aeb60dbc99a2dee663">
+		["build_uid"] = <"92fb6426-c596-3d78-9680-4af462948da4">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- test_duration
+		data matches {
+			ITEM_TREE[at0001] matches {    -- ItemTree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Duration
+						value matches {
+							DV_DURATION matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"test_duration">
+					description = <"test_duration">
+				>
+				["at0001"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Duration">
+					description = <"*">
+				>
+			>
+		>
+	>
