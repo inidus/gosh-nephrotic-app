@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "a8957294e3750b90fd952f2c535fa7ea",
+      "MD5-CAM-1.0.1" : "edfc4c05d4a31dd3ac96ec5b8e6db185",
       "PARENT:MD5-CAM-1.0.1" : "41b369dffeeb085ea8b901900f95a202"
     },
     "details" : {
@@ -220,7 +220,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "52614d0a7e3e4d7a2e7cc8d77dd54ae7"
+        "PARENT:MD5-CAM-1.0.1" : "1117a1a52a8e2a0ed666322013c39eba"
       },
       "details" : { }
     },
@@ -260,7 +260,6 @@
                   "@type" : "C_DURATION",
                   "rmTypeName" : "DURATION",
                   "occurrences" : "1..1",
-                  "patternedConstraint" : "PYMWDTHMS",
                   "constraint" : [ {
                     "lower" : "P0D",
                     "lowerUnbounded" : false,
@@ -285,7 +284,17 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "382" ]
+                } ]
+              } ],
               "attributeTuples" : [ {
                 "@type" : "C_ATTRIBUTE_TUPLE",
                 "members" : [ {
@@ -395,11 +404,21 @@
               "rmTypeName" : "DV_INTERVAL<DV_QUANTITY>",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "lower",
+                "rmAttributeName" : "upper",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "property",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "382" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ {
                     "@type" : "C_ATTRIBUTE_TUPLE",
                     "members" : [ {
@@ -507,11 +526,21 @@
                 } ]
               }, {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "upper",
+                "rmAttributeName" : "lower",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "property",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "382" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ {
                     "@type" : "C_ATTRIBUTE_TUPLE",
                     "members" : [ {
@@ -714,7 +743,7 @@
               "rmTypeName" : "DV_INTERVAL<DV_COUNT>",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "lower",
+                "rmAttributeName" : "upper",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_COUNT",
@@ -739,7 +768,7 @@
                 } ]
               }, {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "upper",
+                "rmAttributeName" : "lower",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_COUNT",
